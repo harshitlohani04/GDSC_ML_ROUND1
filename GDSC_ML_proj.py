@@ -138,5 +138,5 @@ plt.xlabel("Predicted value of price")
 plt.ylabel("Original price of the model")
 plt.show()
 
-print(r2_score(y_test, y_pred))
+print(r2_score(y_test, y_pred))  # Accuracy coming out to be 96.73%
 
