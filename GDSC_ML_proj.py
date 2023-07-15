@@ -140,3 +140,12 @@ plt.show()
 
 print(r2_score(y_test, y_pred))  # Accuracy coming out to be 96.73%
 
+# Plotting the average price of the models
+
+avgPrice = dataset.groupby('Model Name')['Price'].mean()
+plt.figure(figsize=(16, 10))
+avgPrice.plot(kind = 'bar')
+plt.xlabel('Name of the Model')
+plt.ylabel('Average Price of each Model')
+plt.title('Graph of Average Price of each Model')
+plt.show()
